@@ -1,0 +1,1075 @@
+@font-face {
+    font-family: 'alh-aviny';
+    src: url('../fonts/Aviny.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+i {
+    color: black;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+p ,h1 , h2 , h3 , h4 , h5 , h6 {
+    margin: 0;
+    padding: 0;
+}
+.alh-orange {
+    color: rgb(255, 123, 0);
+}
+.alh-red {
+    color: red;
+}
+.alh-blue {
+    color: rgb(0, 38, 255);
+}
+.alh-green {
+    color: green;
+}
+.alh-content-box-right .right-box {
+    margin-right: 10px;
+}
+::placeholder {
+    font-size: 18px;
+    color: rgb(172, 168, 168);
+    font-family: 'alh-aviny';
+}
+/*  وب سایت  header */
+.alh-header {
+    width: 100%;
+    height: 950px;
+    float: right;
+    background-image: url(../images/banner-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: 100% 100%;
+}
+.alh-container {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 0px 150px;
+    box-sizing: border-box;
+}
+.alh-top-header {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 12px 0px 16px 0;
+    border-bottom: 1px solid #fff;
+}
+.alh-top-header .alh-top-header-right {
+    width: 50%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.alh-top-header .alh-top-header-left {
+    width: 50%;
+    height: auto;
+    float: left;
+    display: inline;
+}
+.alh-top-header .alh-top-header-right .fa-comment-dots {
+    margin-left: 5px;
+    color: #000;
+}
+.alh-top-header .alh-top-right-a {
+    font-size: 17px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+    color: black;
+    width: 100px;
+}
+.alh-top-header-right-ul {
+    padding-right: 15px;
+}
+.alh-top-header-right-ul li {
+    padding-right: 5px;
+}
+.alh-top-header-left-ul li {
+    float: left;
+    padding-right: 100px;
+}
+.alh-top-header-left-ul li a {
+    font-size: 17px;
+}
+.alh-header-nav {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.alh-center-header {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+}
+.alh-center-header .alh-header-logo {
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.alh-header-center-main-menu {
+    width: 80%;
+    height: auto;
+    float: left;
+}
+.alh-header-center-main-menu .alh-header-center-ul-main-menu {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding-right: 28%;
+    box-sizing: border-box;
+    position: relative;
+}
+.alh-header-center-ul-main-menu li {
+    margin-left: 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+.alh-header-center-ul-main-menu li:hover a {
+    color: orange;
+    padding: 22px 0;
+}
+.alh-header-center-ul-main-menu li a {
+    font-size: 18px;
+    color: #fff;
+}
+.alh-center-header-child-ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    top: 40px;
+    right: 0;
+    background-color: blue;
+    padding: 10px 0px;
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+.alh-center-header-child-ul li {
+    width: 100%;
+    color: white;
+    display: inline-block;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    transition-duration: 2s;
+}
+.alh-center-header-child-ul li a {
+    color: white !important;
+}
+.alh-header-center-ul-main-menu li:hover .alh-center-header-child-ul {
+    visibility: visible;
+    opacity: 1;
+}
+.alh-center-header-child-ul li:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    transition-duration: 2s;
+}
+.alh-center-header-child-ul li:hover a {
+    color: #000 !important;
+    transition-duration: 2.5s;
+}
+.alh-header-center-li-main-menu {
+    float: left;
+    background-image: linear-gradient(to right, #ff0000, #1e1010, #13ddd4);
+    padding: 0 17px 7px 5px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 12px orangered;
+    transition-duration: 1s;
+    position: relative;
+}
+.alh-header-center-li-main-menu-a {
+    position: relative;
+    top: 2px;
+}
+.alh-header-center-li-main-menu:hover a {
+    color: white !important;
+    padding: 0;
+}
+.alh-header-center-li-main-menu:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.alh-header-center-li-main-menu .fa-sign-in {
+    font-size: 18px;
+    padding-right: 10px;
+    color: white;
+    vertical-align: center;
+}
+.alh-header-center-main-menu .fa-angle-down {
+    color: #fff;
+    padding-right: 5px;
+    font-size: 14px;
+}
+.alh-header-center-right {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 95px;
+}
+.alh-header-center-right-p {
+    color: orangered;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: 'alh-aviny';
+}
+.alh-header-center-right-p2 {
+    color: #33406b;
+    font-size: 95px;
+    margin-bottom: 20px;
+    font-family: 'alh-aviny';
+    font-weight: bold;
+    line-height: 90px;
+}
+.alh-header-center-right-p3 {
+    color: #33406b;
+    font-size: 35px;
+    line-height: 38px;
+    font-family: 'alh-aviny';
+}
+.alh-header-search-form {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin-top: 30px;
+}
+.alh-header-search-form form {
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+}
+.alh-header-search-form form input {
+    width: 100%;
+    height: auto;
+    padding: 15px 40px 15px 20px;
+    border: none;
+    box-shadow: 0px 0px 28px 7px rgb(172, 168, 168);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+.alh-header-search-form form .fa-search {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    background: #2e71f3;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+.alh-header-search-form form .fa-angle-double-right {
+    position: absolute;
+    left: 50px;
+    top: 2px;
+    background: #d31010;
+    padding: 12px 13px;
+    font-size: 16px;
+    border-radius: 27px;
+    color: #fff;
+}
+.alh-box-center-header {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.alh-box-center-header-article {
+    width: 100px;
+    height: auto;
+    float: right;
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+    margin-top: 35px;
+    padding: 20px 18px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    margin-left: 15px;
+}
+.alh-box-p1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+.alh-box-p2 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+.alh-box-center-header-article:hover {
+    background-color: blue;
+    transition-duration: 1s;
+}
+.alh-box-center-header-article:hover .alh-box-p1 {
+    color: rgb(255, 102, 0);
+    transition-duration: 1s;
+}
+.alh-box-center-header-article:hover .alh-box-p2 {
+    color: #fff;
+}
+/* پایان کد نویسی بخش هدر وب سایت */
+/* دکمه برو به بالا */
+.fa-angle-double-up {
+    background-image: linear-gradient(to right, #550fff, #ff0005);
+    padding: 13px 15px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 25px;
+    scroll-behavior: smooth;
+}
+/* پایان دکمه برو به بالا */
+/* شروع قسمت پایینی هدر */
+.alh-content-one {
+    width: 100%;
+    height: 950px;
+    float: right;
+    background-image: url(../images/bg-content-one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.alh-content-one .alh-container .alh-content-one-right {
+    width: 60%;
+    height: auto;
+    float: right;
+}
+.alh-content-one .alh-container .alh-content-one-left {
+    width: 40%;
+    float: left;
+}
+.alh-content-one-left-one-box {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 150px;
+}
+.alh-content-one-left-one-box .alh-content-one-left-one-box-p {
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+    font-family: "alh-aviny";
+}
+.alh-content-one-left-one-box .alh-content-one-left-one-box-title {
+    font-size: 37px;
+    color: #33406b;
+    font-family: sans-serif;
+    font-weight: 900;
+    line-height: 15px;
+}
+.alh-content-one-left-one-box-content {
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.alh-content-one-left-box-content-a {
+    background-image: linear-gradient(to right, #ff0005, #550fff);
+    color: #fff;
+    float: right;
+    padding: 20px 30px;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.alh-content-one-left-box-content-a:hover {
+    background-image: linear-gradient(to right, #550fff, #ff0005);
+}
+.alh-content-one-right .alh-content-box-right {
+    width: 40%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.alh-content-one-right .alh-content-box-left {
+    width: 60%;
+    height: auto;
+    float: left;
+    display: inline;
+    margin-top: 50px;
+}
+.alh-content-box-right-boxs {
+    width: 200px;
+    height: 295px;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+    border-radius: 25px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    transition-duration: 1.2s;
+    position: relative;
+}
+.alh-content-box-right-boxs-titel{
+    text-align: center;
+    margin-top: 35px;
+    color: #33406b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.content-box-image-figure{
+    margin: 0 auto;
+    display: table;
+   
+}
+.alh-content-box-right-boxs:hover .content-box-image-figure{
+    display: none;
+}
+.alh-content-box-right-boxs-content{
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #33406b;
+    line-height: 26px;
+}
+.alh-content-box-right-boxs:hover {
+    background-color: blue;
+    transition-duration: 1.5s;
+}
+.alh-boxs-bottom-figure{
+    margin: 0 auto;
+    display: table;
+    visibility: hidden;
+}
+.alh-content-box-right-boxs:hover .alh-boxs-bottom-figure{
+    padding-bottom: 30px;
+    visibility: visible;
+}
+.alh-content-box-right-boxs:hover .alh-content-box-right-boxs-titel {
+    color: #fff;
+    padding-top: 40px;
+}
+.alh-content-box-right-boxs:hover .alh-content-box-right-boxs-content{
+    color: #fff;
+    padding-bottom: 10px;      
+}
+/*پایان  قسمت پایینی هدر */
+/* شروع قسمت لیست قیمت ها */
+.alh-list-price{
+    width: 100%;
+    height: auto;
+    float: right;
+    background-image: url(../images/content3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200% 93%;
+    
+}
+.alh-list-price-text{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.alh-list-price-text-one{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 800;
+    color: #ffb000;
+}
+.alh-list-price-text-two{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #33406b;
+    margin-top: 5px;
+}
+.alh-list-price-text-three{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+.alh-list-price-text-three a{
+    color: rgb(0, 183, 255);
+}
+.alh-list-price-text-three a:hover{
+    color: #ffb000;
+}
+.alh-list-price-content-box{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top:40px;
+    
+}
+.alh-list-price-boxs{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 55px 50px 65px 100px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+    border-radius: 25px;
+    margin-bottom: 45px;
+}
+.alh-list-price-boxs .alh-list-price-boxs-content{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.alh-list-price-boxs-content-title{
+    font-size: 30px;
+    font-family: 'alh-aviny';
+    color: #33406b;
+    font-weight: bold;
+}
+.alh-list-price-boxs-content-text-one{
+    color: #526288;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+.alh-list-price-boxs-content-text-two{
+    color: #526288;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.alh-list-price-boxs-content-text-three{
+    margin-bottom: 65px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #224fe7;
+    font-family: fantasy;
+}
+.alh-list-price-boxs-content-button{
+    padding: 10px 25px;
+    border: 2px solid rgb(172 168 168);
+    border-radius: 25px;
+    font-size: 19px;
+    color: #33406b;
+    font-weight: 700;
+    
+}
+.alh-list-price-boxs-content-text-three span{
+    font-size: 55px;
+    font-family: monospace;
+}
+.alh-list-price-boxs .alh-list-price-boxs-image{
+    width: 50%;
+    height: auto;
+    float: left; 
+}
+
+.alh-list-price-boxs-content-button:hover{
+    background-image: linear-gradient(to right, #550fff, #ff0005);
+    color: #fff;
+}
+.fa-arrow-left{
+    margin-right: 5px;
+    color: #33406b;
+}
+.alh-list-price-boxs-content-button:hover .fa-arrow-left{
+    color: #fff;
+}
+.bottom-button{
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 70px;
+}
+/*پایان قسمت لیست قیمت ها */
+/* شروع قسمت بخش به ما بپیوندید */
+.alh-register{
+    width: 100%;
+    height: 614px;
+    float: right;
+    background-image: url(../images/content4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 135% 100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+.alh-register-box{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 250px;
+}
+
+.alh-title1-register-box{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+.alh-title2-register-box{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 60px;
+}
+.alh-button-register-box{
+    margin: 0 auto;
+    display: table;
+    margin-top: 45px;
+    background-image: linear-gradient(to right, #ff0005, #04b77d);
+    padding: 8px 28px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 35px;
+    font-weight: 800;
+}
+.alh-button-register-box:hover{
+    background-image: linear-gradient(to right, #04b77d, #ff0005);
+}
+.alh-register-rocket{
+    position: absolute;
+    top:0;
+    animation: alh-rocket 5s linear infinite 0s;
+}
+@keyframes alh-rocket{
+    0%{
+        transform: translate3d(0px , 0px ,0px);
+    }
+    50%{
+        transform: translate3d(0px, -50px, 0px);
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+/* پایان قسمت بخش به ما بپیوندید */
+/* شروع قسمت کد نویسی تمامی پلن ها */
+.alh-all-plan{
+    width: 100%;
+    height: auto;
+    float: right;
+    background-image: url(../images/content5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 145% 100%;
+    margin-bottom: 250px;
+}
+.alh-title1-all-plan{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #f87c15;
+    font-family: 'alh-aviny';
+}
+.alh-title2-all-plan{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: #33406a;
+}
+.alh-title3-all-plan{ 
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #33406b;
+    line-height: 50px;
+}
+.alh-box-all-plan{
+    width: 70%;
+    height: auto;
+    float: right;
+    margin-top: 60px;
+}
+.alh-box-all-plan-one{
+    width: 444px;
+    height: auto;
+    float: right;
+    padding: 43px 40px;
+    background-color: #fff;
+    border: 1px solid #e7e8f2;
+    border-right: 6px solid #e7e8f2;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.alh-box-all-plan-one:hover{
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+    border-right: 6px solid blue;
+}
+.alh-box-all-plan-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #33406b;
+}
+
+.alh-box-all-plan-content {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #33406a;
+}
+/* پایان قسمت کد نویسی تمامی پلن ها */
+/* شروع کد نویسی بخش ویژگی */
+.alh-property{
+    width: 100%;
+    height: 1120px;
+    float: right;
+    background-image: url(../images/content6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.alh-box-property{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 100px;
+}
+.alh-property-text-title{   
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #f87c15;
+}
+.alh-property-text-content{
+    text-align: center;
+    line-height: 80px;
+    font-size: 55px;
+    color: #fff;
+    font-weight: 900;
+}
+.alh-property-text-content-one {
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 19px;
+}
+.alh-property-boxs{
+    width: 540px;
+    height: auto;
+    float: right;
+    margin-top: 30px;
+}
+.alh-property-box{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 40px 30px 30px 30px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .051);
+    border: 1px solid #fff;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.alh-property-box-image{
+    width: 30%;
+    height: auto;
+    float: right;
+    padding-bottom: 10px;
+}
+.alh-property-box-text{
+    width: 70%;
+    height: auto;
+    float: left;    
+}  
+.alh-property-box-text-title {
+    font-size: 25px;
+    font-weight: 800;
+    padding-right: 125px;
+    color: #fff;
+    font-family: 'alh-aviny';
+}
+
+.alh-property-box-text-content{
+    color: #fff;
+    line-height: 26px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+/*  پایان کد نویسی بخش ویژگی */
+/* شروع کدنویسی قسمت مشاوره */
+.alh-moshavere{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 150px 0;
+}
+.alh-moshavere-image{
+    width: 35%;
+    height: auto;
+    float: right;
+}
+.alh-moshavere-image img{
+    width: 350px;
+    height: auto;
+    float: right;
+}
+.alh-moshavere-text-box{
+    width: 65%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+}
+.alh-moshavere-text-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #f87c15;
+}
+.alh-moshavere-text{
+    font-size: 55px;
+    font-weight: 900;
+    color: #33406a;
+    line-height: 80px;
+}
+.alh-moshavere-text-one{
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #33406a;
+}
+.alh-moshavere-boxs{
+    width: 65%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.alh-moshavere-box{
+    width: 350px;
+    height: auto;
+    float: right;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+}
+.alh-moshavere-box .alh-moshavere-box-image , .alh-moshavere-box2 .alh-moshavere-box-image{
+    width: 30%;
+    height: auto;
+    float: right;
+    display: inline;
+}
+.alh-moshavere-box .alh-moshavere-box-text , .alh-moshavere-box2 .alh-moshavere-box-text{
+    width: 70%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: auto;
+    float: left;
+}
+.alh-moshavere-box-text-title {
+    font-size: 28px;
+    margin-right: 5px;
+    font-weight: 800;
+    color: #33406a;
+}
+.alh-moshavere-box-text-one {
+    font-size: 17px;
+    font-weight: 700;
+    color:#4c5983;
+    margin-top: 10px;
+}
+.alh-moshavere-box2{
+    width: 350px;
+    height: auto;
+    float: right;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 25px;
+    box-shadow: 0px 0px 28px 7px rgb(172 168 168);
+    margin-right: 29px;
+}
+/* پایان کدنویسی قسمت مشاوره */
+/* شروع کد نویسی بخش فوتر وب سایت */
+.alh-main-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+.alh-content-top-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 160px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #898989;
+}
+.alh-content-top-footer .alh-content-p-top-footer{
+    width: 65%;
+    height: auto;
+    float: right;
+}
+.alh-content-p-top-footer .alh-content-p-top-footer-title{
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+    line-height: 70px;
+}
+.alh-content-p-top-footer .alh-content-p-top-footer-one{
+    font-size: 19px;
+    color: #fff;
+}
+.alh-content-top-footer .alh-content-a-top-footer{
+    width: 35%;
+    height: auto;
+    float: right;
+    margin-top: 60px;
+}
+
+.alh-content-a-top-footer a{
+    padding: 25px 30px;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #058d7a, #ff0005);
+    font-size: 19px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 45px;
+}
+.alh-content-ul-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 100px 0px;
+}
+.alh-logo-footer{
+    width: 31%;
+    height: auto;
+    float: right;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+.alh-logo-footer p{
+    padding: 20px 0px 25px 0px;
+    color: #fff;
+    font-size: 17px;
+    border-bottom: 2px dotted #8d8d8da8;
+}
+.alh-logo-footer span{
+    color:#bd7c06;
+}
+.alh-ul-li1-footer , .alh-ul-li2-footer , .alh-ul-li3-footer{
+    width: 23%;
+    height: auto;
+    float: right;
+}
+.alh-khabarname-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 50px;
+}
+.alh-khabarname-footer h2 {
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'alh-aviny';
+    color: #fff;
+}
+.alh-khabarname-footer form{
+    margin-top: 20px;
+    position: relative;
+}
+.alh-khabarname-footer form input {
+    width: 100%;
+    padding: 11px 10px;
+    border-radius: 35px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+.alh-khabarname-footer .fa-telegram {
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    padding: 0px;
+    font-size: 35px;
+    background-color: #fff;
+    color: #f87c15;
+    border-radius: 25px;
+    border: 0;
+}
+.alh-sochial-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 30px;
+}
+.alh-sochial-footer li a .fa-twitter{
+    padding:17px;
+}
+.alh-sochial-footer li a .fa-facebook-f{
+    padding: 17px 19px;
+}
+.alh-sochial-footer li a .fa-instagram{
+    padding: 17px 18px;
+}
+.alh-sochial-footer li a .fa-dribbble{
+    padding:17px;
+}
+.alh-sochial-footer li a i{
+    margin-left: 5px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+.alh-sochial-footer li:hover i{
+    background-color: orange;
+    border: 1px solid orange;
+}
+.alh-ul-li1-footer h2 , .alh-ul-li2-footer h2 , .alh-ul-li3-footer h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.alh-ul-li1-footer ul a , .alh-ul-li2-footer ul a , .alh-ul-li3-footer ul a{
+    display: block;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.alh-ul-li1-footer ul a i , .alh-ul-li2-footer ul a i , .alh-ul-li3-footer ul a i{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.alh-ul-footer-menu a:hover{
+    color: orange;
+}
+.alh-ul-footer-menu a:hover i{
+    color: orange;
+}
+.alh-botton-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background-color: #040462;
+    font-family: 'alh-aviny';
+}
+/* پایان کد نویسی بخش فوتر وب سایت */
